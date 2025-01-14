@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - Showcasing skills and projects">
+    <title>Matthew Zelkoski - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold">Matthew Zelkoski</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                    <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                    <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+                    <li><a href="#portfolio" class="hover:text-blue-500">Portfolio</a></li>
+                    <li><button id="contactButton" class="hover:text-blue-500">Contact</button></li>
+                    <li><a href="blog.html" class="hover:text-blue-500">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="hero h-screen flex items-center justify-center text-white">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold mb-4">Hi!</h1>
+            <h2 class="text-5xl font-bold mb-4">I'm Matt Zelkoski</h2>
+            <p class="text-xl">A proud Military Veteran and passionate developer creating impactful software solutions.</p>
+        </div>
+    </section>
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">About Me</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">August 2012</div>
+                    <div class="timeline-content">
+                        <h3 class="text-lg font-bold">Ideas Generation</h3>
+                        <p>GENERIC SPACE HOLDER. UPDATE LATER</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">June 2013</div>
+                    <div class="timeline-content">
+                        <h3 class="text-lg font-bold">Create 3D Print Software</h3>
+                        <p>GENERIC SPACE HOLDER. UPDATE LATER</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2014</div>
+                    <div class="timeline-content">
+                        <h3 class="text-lg font-bold">Open Source Firmware</h3>
+                        <p>GENERIC SPACE HOLDER. UPDATE LATER</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">December 2014</div>
+                    <div class="timeline-content">
+                        <h3 class="text-lg font-bold">Wireless Communication</h3>
+                        <p>GENERIC SPACE HOLDER. UPDATE LATER</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">March 2015</div>
+                    <div class="timeline-content">
+                        <h3 class="text-lg font-bold">Product and Shipment</h3>
+                        <p>GENERIC SPACE HOLDER. UPDATE LATER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Skills</h2>
+            <p class="text-lg leading-relaxed mb-8">I'm a software developer with expertise in building successful software teams. I enjoy building projects that make a difference.</p>
+            <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <li class="bg-white shadow p-4">HTML</li>
+                <li class="bg-white shadow p-4">CSS</li>
+                <li class="bg-white shadow p-4">JavaScript</li>
+                <li class="bg-white shadow p-4">React</li>
+                <li class="bg-white shadow p-4">Leadership</li>
+                <li class="bg-white shadow p-4">Public Speaking</li>
+                <li class="bg-white shadow p-4">Docker</li>
+                <li class="bg-white shadow p-4">CI/CD</li>
+            </ul>
+        </div>
+    </section>
+    <section id="portfolio" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white shadow p-4">
+                    <img src="assets/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold mt-4">Project 1</h3>
+                    <p class="text-sm">Description of the project goes here.</p>
+                </div>
+                <div class="bg-white shadow p-4">
+                    <img src="assets/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold mt-4">Project 2</h3>
+                    <p class="text-sm">Description of the project goes here.</p>
+                </div>
+                <div class="bg-white shadow p-4">
+                    <img src="assets/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                    <h3 class="text-xl font-bold mt-4">Project 3</h3>
+                    <p class="text-sm">Description of the project goes here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="contactPopup" class="popup hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 shadow-lg relative max-w-lg w-full">
+            <button id="closePopup" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+                ✕
+            </button>
+            <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
+            <form>
+                <label for="name" class="block text-sm font-medium text-gray-700">Matthew Zelkoski</label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="Matthew Zelkoski" class="w-full mb-4 p-3 border border-gray-300 rounded">
+    
+                <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="Your Email" class="w-full mb-4 p-3 border border-gray-300 rounded">
+    
+                <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                <textarea id="message" name="message" autocomplete="off" placeholder="Your Message" class="w-full mb-4 p-3 border border-gray-300 rounded"></textarea>
+    
+                <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600 w-full">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

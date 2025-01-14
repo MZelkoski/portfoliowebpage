@@ -1,0 +1,115 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.hero {
+    background: linear-gradient(90deg, rgba(59,130,246,1) 0%, rgba(102,126,234,1) 100%);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.grid-cols-2 li, .grid-cols-4 li {
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid-cols-2 li:hover, .grid-cols-4 li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio .bg-white:hover {
+    border: 2px solid #3B82F6;
+}
+
+button:hover {
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.5);
+}
+
+input, textarea {
+    font-size: 16px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+[data-aos] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-aos].aos-init {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    margin: 2rem auto;
+    width: 50%;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 1rem;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+    padding-right: 1rem;
+}
+
+.timeline-date {
+    background: #3B82F6;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    margin-right: 1rem;
+}
+
+.timeline-content {
+    background: white;
+    border: 2px solid #E5E7EB;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.popup.hidden {
+    display: none;
+}
+.popup.active {
+    display: flex;
+}
